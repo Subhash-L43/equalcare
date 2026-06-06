@@ -1,6 +1,7 @@
 import streamlit as st
 import pickle
 import pandas as pd
+import streamlit.components.v1 as components
 
 st.set_page_config(page_title="EqualCare", page_icon="🏥", layout="wide")
 
@@ -191,12 +192,14 @@ if clicked:
                           white-space:nowrap;">⚡ {row['Combined_Score']}</div>
             </div>"""
 
-        st.markdown(f"""
-        <div style="background:white;border:1px solid #e8edf2;border-radius:18px;
+        full_html = f"""
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <div style="font-family:'Inter',sans-serif;background:white;border:1px solid #e8edf2;border-radius:18px;
                     padding:28px 30px;box-shadow:0 2px 10px rgba(0,0,0,0.05);">
           <div style="font-size:1.1rem;font-weight:700;color:#1a2e44;margin-bottom:18px;">
             🏆 Top 5 Districts in <b>{state}</b> for <b>{disease}</b>
           </div>
           {rows_html}
         </div>
-        """, unsafe_allow_html=True)
+        """
+        components.html(full_html, height=len(result) * 90 + 100, scrolling=False)
