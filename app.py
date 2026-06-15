@@ -118,8 +118,8 @@ st.markdown(f"""
   <p>Find the most <b style="color:white;">affordable</b> and
      <b style="color:white;">quality</b> hospital district for your health needs</p>
   <div class="ec-badges">
-    <div class="ec-badge">🎯 SDG 1 — No Poverty &nbsp;|&nbsp; PES University — Section F</div>
-    <div class="ec-badge">🤖 Model: GradientBoostingClassifier &nbsp;|&nbsp; Accuracy: {accuracy}%</div>
+    <div class="ec-badge"> SDG 1 — No Poverty &nbsp;|&nbsp; PES University — Subhash L</div>
+    <div class="ec-badge"> Model: GradientBoostingClassifier &nbsp;|&nbsp; Accuracy: {accuracy}%</div>
   </div>
 </div>
 """, unsafe_allow_html=True)
@@ -312,7 +312,7 @@ if clicked:
         </head>
         <body>
         <div class="ec-results">
-          <div class="ec-results-title">🏆 Top 5 Districts in <b>{state}</b> for <b>{disease}</b></div>
+          <div class="ec-results-title">🏆 Top Districts in <b>{state}</b> for <b>{disease}</b></div>
           {rows_html}
         </div>
         </body>
