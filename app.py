@@ -3,7 +3,7 @@ import pickle
 import pandas as pd
 import streamlit.components.v1 as components
 
-st.set_page_config(page_title="EqualCare", page_icon="🏥", layout="wide")
+st.set_page_config(page_title="EqualCare", page_icon="image_93ea2b12.png", layout="wide")
 
 # ── Responsive CSS ─────────────────────────────────────────────────
 st.markdown("""
@@ -114,6 +114,7 @@ SCORE_MAP = {'Highly Recommended':4, 'Recommended':3, 'Moderate':2, 'Not Recomme
 # ── Hero banner ────────────────────────────────────────────────────
 st.markdown(f"""
 <div class="ec-hero">
+<img src="image_93ea2b12.png>img</img>
   <h1>EqualCare</h1>
   <p>Find the most <b style="color:white;">affordable</b> and
      <b style="color:white;">quality</b> hospital district for your health needs</p>
