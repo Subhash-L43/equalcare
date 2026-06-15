@@ -114,7 +114,6 @@ SCORE_MAP = {'Highly Recommended':4, 'Recommended':3, 'Moderate':2, 'Not Recomme
 # ── Hero banner ────────────────────────────────────────────────────
 st.markdown(f"""
 <div class="ec-hero">
-<img src="image_93ea2b12.png>img</img>
   <h1>EqualCare</h1>
   <p>Find the most <b style="color:white;">affordable</b> and
      <b style="color:white;">quality</b> hospital district for your health needs</p>
